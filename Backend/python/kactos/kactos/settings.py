@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pdf.apps.PdfConfig',
     'users.apps.UsersConfig',
+    'pdf.apps.PdfConfig'
 ]
 
 MIDDLEWARE = [
