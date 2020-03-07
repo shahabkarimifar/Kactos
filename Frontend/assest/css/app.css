@@ -1,3 +1,4 @@
+/* Costum Css style */
 @font-face{
     font-family: 'yekan';
     src: url(../fonts/iranyekan.ttf) format('truetype');
@@ -7,6 +8,18 @@ body{
     font-size: 0.880rem;
     background: #F8F8F8;    
 }
+.btn-cactus{
+    background: #31C558;
+    border-color: #2dce58;
+
+}
+.wave{
+    width: 100%;
+    bottom: 0;
+    background-size: cover;
+}
+
+/* Heder Styles */
 header section{
     background: #fff;
 }
@@ -27,16 +40,8 @@ header .header-right p{
     line-height: 25px;
 
 }
-.btn-cactus{
-    background: #31C558;
-    border-color: #2dce58;
 
-}
-.wave{
-    width: 100%;
-    bottom: 0;
-    background-size: cover;
-}
+/* introduction styles */
 .introduction{
     position: relative;
     margin-top: -11%;
@@ -62,6 +67,8 @@ header .header-right p{
     display: inline-block;
     margin: 15px 0 25px 0 ;
 }
+
+/* category styles */
 .category .card{
     border-radius: 25px;
     text-decoration: none;
@@ -91,6 +98,8 @@ header .header-right p{
 .biography ul li a:hover{
     color: #696969;
 }
+
+/* suggest styles */
 .suggest h6{
     font-size: 0.750rem;
 }
@@ -120,6 +129,8 @@ header .header-right p{
 .statics .card h4{
     color: #686868;
 }
+
+/* news styles */
 .news{
     margin-top: -14%;
 }
@@ -142,12 +153,17 @@ header .header-right p{
     color: #acacac;
     font-size: 0.800rem;
 }
+
+/* footer styles */
 footer h6{
     text-align: justify;
     line-height: 30px;
 }
 
+/* Responsive - 768 - 992 */
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Heder Styles */
     header .header-right p{
         padding: 35px 30px 20px 15px;
         font-size: 0.900rem;
@@ -159,16 +175,22 @@ footer h6{
     header .header-right .btn{
         margin-right: 1.7rem!important;
     }
+
+    /* introduction styles */
     .introduction h5{
         font-size: 0.990rem;
     }
     .introduction .card p{
 
     }
+
+    /* category styles */
     .category h5{
         font-size: 1.1rem;
         padding: 2rem 0 !important;
     }
+
+    /* biography styles */
     .biography ul{
         font-size: 1rem;
     }
@@ -182,15 +204,21 @@ footer h6{
     .biography h5{
         font-size: 1.1rem;
     }
+
+    /* suggest styles */
     .suggest h5{
         font-size: 1.1rem;
     }
+
+    /* news styles */
     .news .news-box h3{
         font-size: 1.6rem;
     }
     .news .news-box p{
         font-size: 1rem;
     }
+
+    /* statics styles */
     .statics .card h2{
         font-size: 2.2rem;
     }
@@ -201,7 +229,11 @@ footer h6{
         font-size: 1.3rem;
     }
 }
+
+/* Responsive - 320 - 768 */
 @media (min-width: 320px) and (max-width: 767.98px) { 
+    
+    /* header styles */
     header .header-right h3 {
         padding: 54px 0 0 0;
         font-size: 1.3rem;
@@ -228,6 +260,8 @@ footer h6{
     header .header-left img{
         width: 300px;
     }
+
+    /* biography styles */
     .biography img{
         width: 300px;
     }
@@ -245,6 +279,8 @@ footer h6{
         text-align: right;
         line-height: 25px;    
     }
+
+    /* news styles */
     .news .news-box h3{
         font-size: 1.6rem;
     }
