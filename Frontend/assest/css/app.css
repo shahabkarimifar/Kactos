@@ -14,7 +14,8 @@ header .header-right h3{
     /* width: 450px; */
     
     padding: 95px 50px 0 60px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 39px;
     font-weight: bold;    
 }
 header .header-right h3 span{
@@ -23,6 +24,8 @@ header .header-right h3 span{
 header .header-right p{
     padding: 35px 50px 20px 90px;
     font-size: 0.990rem;
+    line-height: 25px;
+
 }
 .btn-cactus{
     background: #31C558;
@@ -37,6 +40,11 @@ header .header-right p{
 .introduction{
     position: relative;
     margin-top: -11%;
+    
+}
+.introduction a{
+    text-decoration: none;
+    color: #292929;
 }
 .intro{
     height: 90px;
@@ -45,7 +53,7 @@ header .header-right p{
 }
 .introduction .card{
     border-radius: 20px;
-    box-shadow: 0 .5rem 1rem rgba(114, 114, 114, 0.15)!important;
+    box-shadow: 0 .5rem 1rem rgba(114, 114, 114, 0.15)!important;    
 }
 .introduction .card p{
     font-size: 0.830rem;
@@ -76,8 +84,19 @@ header .header-right p{
 .biography ul li{
     padding-right: 10px;
 }
+.biography ul li a{
+    text-decoration: none;
+    color: #292929;
+}
+.biography ul li a:hover{
+    color: #696969;
+}
 .suggest h6{
     font-size: 0.750rem;
+}
+.suggest a{
+    text-decoration: none;
+    color: #292929;
 }
 .suggest p{
     height: 75px;
