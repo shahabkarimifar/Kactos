@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style Links -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    <title>خانه | کاکتوس</title>
+</head>
+<body>
+<!-- Start Header -->
+    <header>
+        <section>
+            <div class="container">
+            <!-- Main menu is here -->
+            <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+                <!-- Logo is here -->
+                <a href="" class="navbar-brand mr-0"><img src="{% static 'images/Logo.png' %}" width="80px" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-between" id="mainnavbar">
+                    <ul class="navbar-nav pr-3">
+                        <!-- start Menu item -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">صفحه اصلی</a>
+                        </li>
+                        <!-- end Menu item -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">جست‌و‌جوی کتاب</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">آپلود کتاب</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">راهنمای دانلود</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">درباره ما</a>
+                        </li>
+                    </ul>
+                    <!-- Login and Register Button is here -->
+                    <a href="" class="btn btn-light btn-sm border text-secondary">ورود / ثبت نام</a>
+                </div>
+            </nav>
+            {% block lost %}{% endblock %}
+        </div>
+        </section>
+    <img src="{% static 'images/wave.png' %}" class="wave" alt="">
+
+    </header><!-- End Header -->
+    {% block content %} {% endblock %}
+<!-- Start footer -->
+    <footer class="bg-white">
+        <div class="container text-muted">
+            <h6 class="py-3"><span class="text-danger">توجه :</span>  این پروژه به صورت آزاد و اوپن سورس بوده و هرگونه استفاده تجاری از آن دور از اخلاق و پیگرد قانونی دارد و برای توسعه ان به <a href="https://github.com/shahabkarimifar/Kactos">گیت هاب</a> مراجعه کنید</h6>
+        </div>
+    </footer><!-- End Footer -->
+
+    <!-- Script Links -->
+    <script src="{% static 'scripts/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'scripts/bootstrap.min.js' %}"></script>
+    <!-- <script src="assest/scripts/fontawesome.min.js"></script> -->
+    <script src="{% static 'scripts/app.js' %}"></script>
+</body>
+</html>

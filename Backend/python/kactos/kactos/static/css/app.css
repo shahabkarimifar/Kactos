@@ -1,0 +1,296 @@
+/* Costum Css style */
+@font-face{
+    font-family: 'yekan';
+    src: url(../fonts/iranyekan.ttf) format('truetype');
+}
+body{
+    font-family: yekan;
+    font-size: 0.880rem;
+    background: #F8F8F8;    
+}
+.btn-cactus{
+    background: #31C558;
+    border-color: #2dce58;
+
+}
+.wave{
+    width: 100%;
+    bottom: 0;
+    background-size: cover;
+}
+
+/* Heder Styles */
+header section{
+    background: #fff;
+}
+header .header-right h3{
+    /* width: 450px; */
+    
+    padding: 95px 50px 0 60px;
+    font-size: 1.6rem;
+    line-height: 39px;
+    font-weight: bold;    
+}
+header .header-right h3 span{
+    color: #31C558;
+}
+header .header-right p{
+    padding: 35px 50px 20px 90px;
+    font-size: 0.990rem;
+    line-height: 25px;
+
+}
+
+/* introduction styles */
+.introduction{
+    position: relative;
+    margin-top: -11%;
+    
+}
+.introduction a{
+    text-decoration: none;
+    color: #292929;
+}
+.intro{
+    height: 90px;
+    background: #fff;
+
+}
+.introduction .card{
+    border-radius: 20px;
+    box-shadow: 0 .5rem 1rem rgba(114, 114, 114, 0.15)!important;    
+}
+.introduction .card p{
+    font-size: 0.830rem;
+}
+.introduction .card span{
+    display: inline-block;
+    margin: 15px 0 25px 0 ;
+}
+
+/* category styles */
+.category .card{
+    border-radius: 25px;
+    text-decoration: none;
+    color: #292929;
+}
+.biography h2{
+    padding: 50px 0 15px 0;
+}
+.biography h5{
+    line-height: 30px;
+    font-size: 19px;
+}
+.biography ul{
+    font-size: 18px;
+    list-style: url(../images/dot.png);
+    padding: 0;
+    margin-right: 20px;
+    line-height: 35px;
+}
+.biography ul li{
+    padding-right: 10px;
+}
+.biography ul li a{
+    text-decoration: none;
+    color: #292929;
+}
+.biography ul li a:hover{
+    color: #696969;
+}
+
+/* suggest styles */
+.suggest h6{
+    font-size: 0.750rem;
+}
+.suggest a{
+    text-decoration: none;
+    color: #292929;
+}
+.suggest p{
+    height: 75px;
+    overflow: hidden;
+    font-size: 0.800rem;
+    line-height: 19px;
+    margin: 0;
+}
+.suggest .card{
+    box-shadow: 0 .125rem 0.75rem rgba(0,0,0,0.075)!important;
+}
+.statics .card{
+    border-radius: 15px !important;
+    box-shadow: 0 0.1rem 1rem rgba(0,0,0,.12)!important;
+}
+.statics .card h2{
+    color: #2fb4e9;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+.statics .card h4{
+    color: #686868;
+}
+
+/* news styles */
+.news{
+    margin-top: -14%;
+}
+.news p{
+    font-size: 1.1rem;
+    padding: 10px 0 10px;
+    line-height: 30px;
+    color: #a3a3a3;
+}
+.news .news-box{
+    border-radius: 15px;
+    box-shadow : 0 .1rem 1rem rgba(0,0,0,.13)!important;
+}
+.news .news-box input[type=text]{
+    box-shadow : 0 .1rem 1rem rgba(0,0,0,.13)!important;
+    border: 1px solid #eeeeee;
+    padding: 10px !important;
+}
+.news .news-box input[type=text]::placeholder{
+    color: #acacac;
+    font-size: 0.800rem;
+}
+
+/* footer styles */
+footer h6{
+    text-align: justify;
+    line-height: 30px;
+}
+
+/* Responsive - 768 - 992 */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Heder Styles */
+    header .header-right p{
+        padding: 35px 30px 20px 15px;
+        font-size: 0.900rem;
+    }
+    header .header-right h3{
+        padding: 35px 30px 0 10px;
+        font-size: 1.1rem;
+    }
+    header .header-right .btn{
+        margin-right: 1.7rem!important;
+    }
+
+    /* introduction styles */
+    .introduction h5{
+        font-size: 0.990rem;
+    }
+    .introduction .card p{
+
+    }
+
+    /* category styles */
+    .category h5{
+        font-size: 1.1rem;
+        padding: 2rem 0 !important;
+    }
+
+    /* biography styles */
+    .biography ul{
+        font-size: 1rem;
+    }
+    .biography img{
+        display: flex;
+        align-items: center;
+    }
+    .biography h2{
+        font-size: 1.7rem;
+    }
+    .biography h5{
+        font-size: 1.1rem;
+    }
+
+    /* suggest styles */
+    .suggest h5{
+        font-size: 1.1rem;
+    }
+
+    /* news styles */
+    .news .news-box h3{
+        font-size: 1.6rem;
+    }
+    .news .news-box p{
+        font-size: 1rem;
+    }
+
+    /* statics styles */
+    .statics .card h2{
+        font-size: 2.2rem;
+    }
+    .statics .card img{
+        width: 65px;
+    }
+    .statics .card h4{
+        font-size: 1.3rem;
+    }
+}
+
+/* Responsive - 320 - 768 */
+@media (min-width: 320px) and (max-width: 767.98px) { 
+    
+    /* header styles */
+    header .header-right h3 {
+        padding: 54px 0 0 0;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    header .header-right p {
+        padding: 25px 60px 25px 60px;
+        font-size: 0.970rem;
+        text-align: center;
+    }
+    header .header-right .btn{        
+        margin-right: 1.7rem!important;
+    }
+    header .header-right .btn{
+        margin: 0!important;
+    }
+    header .header-right .buttons{
+        text-align: center;
+    }
+    header .header-left{
+        justify-content: center;
+    }
+    header .header-left img{
+        width: 300px;
+    }
+
+    /* biography styles */
+    .biography img{
+        width: 300px;
+    }
+    .biography{
+        text-align: center;
+    }
+    .biography h2{
+        font-size: 1.9rem;
+    }
+    .biography h5{
+        font-size: 1.1rem;
+    }
+    .biography ul{
+        font-size: 1rem;
+        text-align: right;
+        line-height: 25px;    
+    }
+
+    /* news styles */
+    .news .news-box h3{
+        font-size: 1.6rem;
+    }
+    .news .news-box p{
+        font-size: 1rem;
+    }
+    .news .news-box img{
+        width: 150px;
+    }
+    .news .news-box .news-box-left{
+        text-align: center;
+    }
+}
