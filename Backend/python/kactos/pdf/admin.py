@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Genre, Book
+from .models import Genre, Book, NewsEmail
 
 
 class GenreAdmin(admin.ModelAdmin):
@@ -28,6 +28,18 @@ class PdfAdmin(admin.ModelAdmin):
 	ordering = ('title',)
 
 
+class NewsEmailAdmin(admin.ModelAdmin):
+	list_display = ('ip', 'email', 'joined_date')
+	list_filter = ('joined_date', )
+
+	fieldsets = ((None, {'fields': ('ip', 'email', 'joined_date')}),)
+	add_fieldsets = ((None, {'classes': ('wide',),
+							 'fiedls': ('ip', 'email', 'joined_date')}),)
+	ordering = ('ip',)
+	search_fields = ('ip', 'email',)
+
+
 
 admin.site.register(Book, PdfAdmin)
 admin.site.register(Genre, GenreAdmin)
+admin.site.register(NewsEmail, NewsEmailAdmin)

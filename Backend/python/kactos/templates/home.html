@@ -198,8 +198,7 @@
         </div>
     </section><!-- End statics -->
     <img src="{% static 'images/wave4.png' %}" class="wave" alt="">
-
-<!-- Start news -->
+    <!-- Start news -->
     <section class="news mb-5">
         <div class="container">
             <div class="row justify-content-center">
@@ -207,7 +206,7 @@
                     <div class="bg-white p-5 news-box">
                         <div class="row">
                             <div class="col-md-3 text-center d-flex align-items-center justify-content-center">
-                                <img src="{% static 'images/news-img.png' %}" class="img-fluid" alt="">
+                                <img src="assest/images/news-img.png" class="img-fluid" alt="">
                             </div>
                             <div class="col-md-9 news-box-left">
                                 <h3>عضویت در خبرنامه</h3>
@@ -215,12 +214,13 @@
                                 <div class="row">
                                     <div class="col-lg-8 mb-2 px-1">
                                         <!-- Form iS Here -->
-                                        <form action="">
+                                        <form action="" method="POST">
+                                            {% csrf_token %}
                                             <!-- Email Input is here -->
-                                        <input type="text" name="" id="" class="form-control shadow-sm" placeholder="ایمیل خود را وارد کنید">
+                                        <input type="text" name="email" id="" class="form-control shadow-sm" placeholder="ایمیل خود را وارد کنید">
                                     </div>
                                     <div class="col-lg-4 px-1">
-                                        <input type="button" name="" class="btn btn-success btn-cactus btn-block" value="عضویت در خبرنامه">
+                                        <input type="submit" name="" class="btn btn-success btn-cactus btn-block" value="عضویت در خبرنامه">
                                         </form>
                                     </div>
                                 </div>

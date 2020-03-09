@@ -25,7 +25,14 @@ class Book(models.Model):
 	file = models.FileField(upload_to='pdfs/')
 	suggest = models.BooleanField(default=False)
 
-
-
 	def __str__(self):
 		return self.title
+
+
+class NewsEmail(models.Model):
+	ip = models.CharField(max_length=40)
+	email = models.EmailField(unique=True)
+	joined_date = models.DateTimeField(default=timezone.now)
+
+	def __str__(self):
+		return self.email
