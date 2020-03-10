@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpRequest
+from magic import from_file as check_file
 
 from .models import Genre, Book, NewsEmail
 from users.models import CustomUser
@@ -36,3 +37,16 @@ def get_client_ip(user_info):
 		ip = user_info.META.get('REMOTE_ADDR')
 
 	return ip
+
+
+def pdf_verification(file_address):
+	"""
+		take file address and check file to be a real pdf file
+		this function using python-magic module and from_file(as check_file) function from this module
+	"""
+	test_result = check_file(file_address)
+	test_result = test_result.split(' ')[0]
+	if test_resutl == 'PDF':
+		return True
+	else:
+		return False
